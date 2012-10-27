@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeFirstSeeder>
+  <DbSets>
+    <Roles>
+      <Role key="admin">
+        <Name>Admin</Name>
+      </Role>
+      <Role key="user">
+        <Name>User</Name>
+      </Role>
+    </Roles>
+
+    <Locations>
+      <Location>
+        <City>Boston</City>
+        <Users>
+          <User>
+            <Name>Mary</Name>
+            <Age>21</Age>
+            <Roles>
+              <Role usekey="admin" />
+              <Role usekey="user" />
+            </Roles>
+          </User>
+          <User>
+            <Name>Bob</Name>
+            <Age>45</Age>
+            <Roles>
+              <Role usekey="user" />
+            </Roles>
+          </User>
+        </Users>
+      </Location>
+      <Location>
+        <City>Chicago</City>
+        <Users>
+          <User>
+            <Name>Tom</Name>
+            <Age>33</Age>
+            <Roles>
+              <Role usekey="admin" />
+              <Role usekey="user" />
+            </Roles>
+          </User>
+        </Users>
+      </Location>
+    </Locations>
+  </DbSets>
+  
+  
+  <SqlCommands>
+    <SqlCommand postinsert="true">
+      <![CDATA[
+CREATE PROCEDURE TestProcedure
+	@abc NVARCHAR(100)
+AS
+BEGIN
+	SELECT @abc
+END
+      ]]>
+    </SqlCommand>
+  </SqlCommands>
+  
+</CodeFirstSeeder>
