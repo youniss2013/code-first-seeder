@@ -186,7 +186,7 @@ namespace CodeFirstSeeder.Xml
         private object GetPropertyValue( Type propertyType, XElement propertyElement )
         {
             // if simple type, return converted string
-            if ( propertyType.IsValueType || propertyType == typeof ( string ) || propertyType == typeof ( byte[] ) )
+            if ( propertyType.IsValueType || propertyType == typeof ( string ) || propertyType == typeof ( byte[] ) || propertyType.IsEnum )
             {
                 return ConvertToType( propertyType, propertyElement.Value );
             }
@@ -228,6 +228,23 @@ namespace CodeFirstSeeder.Xml
                 if ( targetType == typeof ( string ) )
                 {
                     return value;
+                }
+
+                if ( targetType.IsEnum )
+                {
+                    return Enum.Parse(targetType, value);
+                }
+
+                if (targetType.GenericTypeArguments.Count() == 1 && targetType.GenericTypeArguments[0].IsEnum)
+                {
+                    try
+                    {
+                        return (Enum.Parse(targetType.GenericTypeArguments[0], value));
+                    }
+                    catch (Exception)
+                    {
+                        return null;
+                    }
                 }
 
                 if ( targetType == typeof ( Int32 ) || targetType == typeof ( Int32? ) )

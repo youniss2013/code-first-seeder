@@ -17,6 +17,7 @@
           <User>
             <Name>Mary</Name>
             <Age>21</Age>
+            <Gender>Female</Gender>
             <Roles>
               <Role usekey="admin" />
               <Role usekey="user" />
@@ -37,6 +38,7 @@
           <User>
             <Name>Tom</Name>
             <Age>33</Age>
+            <Gender>Male</Gender>
             <Roles>
               <Role usekey="admin" />
               <Role usekey="user" />

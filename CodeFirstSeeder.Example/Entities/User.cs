@@ -15,6 +15,8 @@ namespace CodeFirstSeeder.Example.Entities
 
         public int Age { get; set; }
 
+        public Gender? Gender { get; set; }
+
         public virtual Location Location { get; set; }
 
         public virtual ICollection<Role> Roles { get; set; }
