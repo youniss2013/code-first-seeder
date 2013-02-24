@@ -69,15 +69,15 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CodeFirstSeeder\CodeFirstSeeder.csproj">
-      <Project>{9208FAD5-8950-47B2-BF6F-4B7FC27A908E}</Project>
-      <Name>CodeFirstSeeder</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="MyContext.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CodeFirstSeeder\CodeFirstSeeder.csproj">
+      <Project>{9208fad5-8950-47b2-bf6f-4b7fc27a908e}</Project>
+      <Name>CodeFirstSeeder</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

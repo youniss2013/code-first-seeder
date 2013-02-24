@@ -1,23 +1,13 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeFirstSeeder", "CodeFirstSeeder\CodeFirstSeeder.csproj", "{9208FAD5-8950-47B2-BF6F-4B7FC27A908E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeFirstSeeder.Example", "CodeFirstSeeder.Example\CodeFirstSeeder.Example.csproj", "{6BD50D91-E175-4BDB-BD1A-3345B2E1652D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeFirstSeeder.NuGet.Packager", "CodeFirstSeeder.NuGet.Packager\CodeFirstSeeder.NuGet.Packager.csproj", "{0451BAEF-DF2E-4B98-8644-94EE9415E389}"
+EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 3
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs11
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = CodeFirstSeeder.Example\\CodeFirstSeeder.Example.csproj
-		SccProjectName1 = CodeFirstSeeder.Example
-		SccLocalPath1 = CodeFirstSeeder.Example
-		SccProjectUniqueName2 = CodeFirstSeeder\\CodeFirstSeeder.csproj
-		SccProjectName2 = CodeFirstSeeder
-		SccLocalPath2 = CodeFirstSeeder
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Debug|Mixed Platforms = Debug|Mixed Platforms
@@ -47,6 +37,16 @@ Global
 		{6BD50D91-E175-4BDB-BD1A-3345B2E1652D}.Release|Mixed Platforms.Build.0 = Release|x86
 		{6BD50D91-E175-4BDB-BD1A-3345B2E1652D}.Release|x86.ActiveCfg = Release|x86
 		{6BD50D91-E175-4BDB-BD1A-3345B2E1652D}.Release|x86.Build.0 = Release|x86
+		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{0451BAEF-DF2E-4B98-8644-94EE9415E389}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
