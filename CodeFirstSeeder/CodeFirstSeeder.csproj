@@ -57,7 +57,6 @@
     <Compile Include="Xml\CreateDatabaseIfNotExists.cs" />
     <Compile Include="Xml\DropCreateDatabaseAlways.cs" />
     <Compile Include="Xml\DropCreateDatabaseIfModelChanges.cs" />
-    <Compile Include="Xml\Gender.cs" />
     <Compile Include="Xml\XmlSeeder.cs" />
   </ItemGroup>
   <ItemGroup>

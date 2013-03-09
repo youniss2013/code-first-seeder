@@ -2,17 +2,18 @@
 <package >
   <metadata>
     <id>CodeFirstSeeder</id>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <title>Entity Framework Code First Seeder</title>
     <authors>Brent Taylor</authors>
     <owners>brenttaylor</owners>
     <description>
       Now works with Enums! Entity Framework Code First Seeder populates newly created databases with seed data from a simple XML file. You'll no longer need to create custom implementations of IDatabaseInitializer to hard code your seed entities.
+      If updating from v0.9.x, you'll need to slightly modify your XML file. Wrap the DbSets node in a new root node, CodeFirstSeeder. See SeederExample.xml.
     </description>
     <releaseNotes>
     </releaseNotes>
     <summary>
-      Now works with Enums! Entity Framework Code First Seeder populates newly created databases with seed data from a simple XML file. You'll no longer need to create custom implementations of IDatabaseInitializer to hard code your seed entities.
+      Entity Framework Code First Seeder populates newly created databases with seed data from a simple XML file.
     </summary>
     <language>en-US</language>
     <projectUrl>http://codefirstseeder.codeplex.com/</projectUrl>
